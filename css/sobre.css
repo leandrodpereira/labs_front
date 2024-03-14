@@ -2,6 +2,7 @@
     --cor-base: #333;
     --cor-fundo-img: #f2eded;
     --cor-borda-img: #ccc;
+    --cor-titulo-especial: #898f95;
 }
 body{
     color: var(--cor-base);
@@ -35,7 +36,7 @@ figcaption{
     margin-top: 10px;
 }
 
-p {
+p{
     padding: 0 45px;
     text-indent: 25px;
     text-align: justify;
