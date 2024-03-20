@@ -3,6 +3,7 @@
     --cor-fundo-img: #f2eded;
     --cor-borda-img: #ccc;
     --cor-titulo-especial: #898f95;
+    --cor-rodape: #777;
 }
 body{
     color: var(--cor-base);
@@ -40,4 +41,26 @@ p{
     padding: 0 45px;
     text-indent: 25px;
     text-align: justify;
+}
+
+#centro-distribuicao{
+    margin: auto;
+    width: 550px;
+}
+
+#rodape{
+    color: var(--cor-rodape);
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+#rodape img {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}
+
+#familia-pelho{
+    margin: 0 0 10px 10px;
+    float: right;
 }
