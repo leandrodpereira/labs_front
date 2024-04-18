@@ -45,3 +45,19 @@ fieldset legend {
 .grid-button-container input[type=reset] {
     background-color: orangered;
 } 
+
+.grid-header-container {
+    display: grid;
+    grid-template-areas: 'top-left top-right';
+    border-bottom: rgb(165, 155, 141) 5px solid;
+    margin-bottom: 5px;
+}
+
+.top-right {
+    grid-area: top-right;
+    justify-self: right;
+}
+
+.top-left {
+    grid-area: top-left;
+}
