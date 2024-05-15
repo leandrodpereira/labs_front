@@ -3,6 +3,8 @@
     --cor-menu: #036;
     --cor-menu-lateral: #dcdcdc;
     --cor-menu-lateral-itens: #fff;
+    --cor-menu-lateral-itens-hover: #007dc6;
+    --cor-menu-lateral-itens-active: #f00;
     --cor-painel-novidades: #f5dcdc;
     --cor-panel-mais-vendidos: #dcdcf5;
 }
@@ -176,3 +178,26 @@ footer {
     right: 0;
 }
  
+.menu-opcoes a:hover {
+    color: var(--cor-menu-lateral-itens-hover);     
+}
+
+.menu-opcoes a:active {
+    color: var(--cor-menu-lateral-itens-active);
+}
+
+.menu-departamentos li ul {
+    display: none;
+}
+
+.menu-departamentos li:hover ul {
+    display: block;
+}
+
+.menu-departamentos ul ul li {
+    background-color: var(--cor-menu-lateral);
+}
+
+.menu-departamentos li li a::before {
+    content: '- ';
+}
