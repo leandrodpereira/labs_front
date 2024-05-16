@@ -1,4 +1,4 @@
-:root{
+:root {
     --cor-base: #333;
     --cor-menu: #036;
     --cor-menu-lateral: #dcdcdc;
@@ -6,18 +6,23 @@
     --cor-menu-lateral-itens-hover: #007dc6;
     --cor-menu-lateral-itens-active: #f00;
     --cor-painel-novidades: #f5dcdc;
+    --cor-painel-shadow: #999;
+    --cor-painel-titulo: rgba(0, 0, 0, 0.5);
+    --cor-painel-novidades-grad: #bebef4;
     --cor-panel-mais-vendidos: #dcdcf5;
+    --cor-panel-mais-vendidos-grad: #f4bebe;    
 }
+
 .sacola {
-   background: url(../img/sacola.png) no-repeat top right;
-   font-size: 14px;
-   padding-right: 35px;
-   text-align: right;
-   width: 140px;    
-   padding-top: 8px;
-   position: absolute;
-   top: 0;
-   right: 0;
+    background: url(../img/sacola.png) no-repeat top right;
+    font-size: 14px;
+    padding-right: 35px;
+    text-align: right;
+    width: 140px;
+    padding-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .menu-opcoes {
@@ -101,6 +106,8 @@ header {
     margin: 10px 0;
     padding: 10px;
     width: 445px;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 4px var(--cor-painel-shadow);
 }
 
 .novidades {
@@ -124,6 +131,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 2px var(--cor-painel-titulo);
 }
 
 .painel a {
@@ -134,11 +142,11 @@ header {
 }
 
 .novidades {
-    background-color: var(--cor-painel-novidades);
+    background: linear-gradient(var(--cor-painel-novidades), var(--cor-painel-novidades-grad));
 }
 
 .mais-vendidos {
-    background-color: var(--cor-panel-mais-vendidos);
+    background: linear-gradient(var(--cor-panel-mais-vendidos), var(--cor-panel-mais-vendidos-grad));
 }
 
 footer {
@@ -177,9 +185,9 @@ footer {
     top: 12px;
     right: 0;
 }
- 
+
 .menu-opcoes a:hover {
-    color: var(--cor-menu-lateral-itens-hover);     
+    color: var(--cor-menu-lateral-itens-hover);
 }
 
 .menu-opcoes a:active {
