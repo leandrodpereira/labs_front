@@ -8,6 +8,7 @@
     --cor-painel-novidades: #f5dcdc;
     --cor-painel-shadow: #999;
     --cor-painel-titulo: rgba(0, 0, 0, 0.5);
+    --cor-painel-base: rgba(255, 255, 255, 0.1);
     --cor-painel-novidades-grad: #bebef4;
     --cor-panel-mais-vendidos: #dcdcf5;
     --cor-panel-mais-vendidos-grad: #f4bebe;    
@@ -124,6 +125,7 @@ header {
     width: 135px;
     margin: 2px;
     padding-bottom: 10px;
+    transition: 0.7s ease-out;
 }
 
 .painel h2 {
@@ -208,4 +210,15 @@ footer {
 
 .menu-departamentos li li a::before {
     content: '- ';
+}
+
+.painel li:hover {
+    box-shadow: 0 0 5px var(--cor-base);
+    transition: 0.7s ease-in;
+    background-color: var(--cor-painel-base);
+    transform: scale(1.05) rotate(-5deg);
+}
+
+.painel li:nth-child(2n):hover {
+    transform: scale(1.05) rotate(5deg);
 }
